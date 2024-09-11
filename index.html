@@ -84,7 +84,7 @@
 <div style="text-align: center;">
   <h2>About</h2>
   <p>
-    Hello! 👋 My name is Gavin Vasandani, and welcome to my personal website! I'm a 3rd-year student at Imperial College London, studying MEng Computer Engineering (EIE). I recently interned at AMD as a Software and Hardware Engineer, focusing on the Vivado IDE for FPGAs within the Adaptive and Embedded Computing Group. My passion lies in crafting low-level, high-performance C++ code that directly interfaces with computing architecture.
+    Hello! 👋 My name is Gavin Vasandani, and welcome to my personal website! I'm a 4th-year student at Imperial College London, studying MEng Computer Engineering (EIE). I recently interned at Arctic Lake and AMD as a Software/Hardware Engineer. My passion lies in crafting low-level, high-performance C++ code that directly interfaces with computing architecture.
   </p>
    <br>
   <p>
@@ -92,7 +92,7 @@
   </p>
    <br>
   <p>
-    <b>I'm currently seeking a 3 or 6 month software or hardware engineering internship.</b>
+    <b>I'm currently seeking a full-time graduate position as an FPGA engineer.</b>
   </p>
    <br>
   <p>
@@ -274,8 +274,24 @@
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
+              <h4>Arctic Lake Technology </h4>
+              <h5>April 2024 - Sept 2024</h5>
+              <p><em>Software and Hardware Engineering Intern </em></p>
+              <p><em>London, United Kingdom </em></p>
+              <ul>
+            <li>Intern in the FPGA team, integrating Arctic Lake’s custom, high-performance trading system (ALX) with ultra-low latency pre-trade risk checking using FPGAs.</li>
+            <li><i>Project 1:</i> Developed a 32-bit Ethernet (ETH) module for TCP packet parsing, maximizing logic execution in each cycle to optimize latency. (Verilog, Vivado, Alveo U50)</li>
+            <li><i>Project 2:</i> Built a module to verify order messages against ESMA requirements, handling writing of ESMA parameters via a custom PCIe module. </li>
+            <li><i>Project 3:</i> Designed FPGA core, integrating all subsidiary modules for packet parsing, rejection logic, ESMA tests, order risk check and packet logging by writing received packets as frames to a logbook via PCIe. </li>
+            <li><i>Project 4:</i> Built a Java-based test harness to transmit packets from a NIC to the FPGA, simulating order packets sent by client for pre-trade risk checks. (Java, NIC) </li>
+            <li><i>Project 5:</i> Created TCP packet manager to handle unordered, duplicate, and corrupt packets by calculating the expected sequence number and checking invalid checksum bit of the incoming TCP packet. Used Linux TC (traffic control) to test packet corruption, reordering and duplication. </li>
+            <li>Created Cocotb testbenches for unit testing of each module, and designed comrpehensive integration tests when building FPGA core and larger subsystems. (Python, Cocotb).</li>
+            <li><i>Project 6:</i> Created Jenkins CI/CD pipelines for automates testing, Docker builds, and nightly hardware tests (Jenkins, Docker, Kaniko, Gerrit) </li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>AMD (Advanced Micro Devices) Inc. </h4>
-              <h5>June 2023 - Present</h5>
+              <h5>June 2023 - Sept 2023</h5>
               <p><em>Software and Hardware Engineering Intern </em></p>
               <p><em>Belfast, Northern Ireland </em></p>
               <ul>
